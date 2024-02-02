@@ -207,27 +207,27 @@ console.log("===================")
     food that has above a certain rating, 
     below a certain price, or any other combo.
 
-    Write a function called `filterByProperty`
+    Write a function called `filterByProperty`                              function
     that takes in three arguments: `property`, 
     `number`, and `type. 
 
-    The property will be a string (rating,
+    The property will be a string (rating,                              property
     popularity, or price)
 
-    The number will be the number that you want
+    The number will be the number that you want                         number
     to compare against 
 
-    The type should be 'above' or 'below' to 
+    The type should be 'above' or 'below' to                            type
     indicate whether you want to get foods with
     values that are above or below the given number
     for the given property
 
-    Inside the function, create a variable to hold
+    Inside the function, create a variable to hold                  variable
     a filtered array
 
-    Use the filter method to filter the foodArr
+    Use the filter method to filter the foodArr                     .filter
 
-        In the callback, check if the `type` is `above`, 
+        In the callback, check if the `type` is `above`,            callback
         if it is, return objects whose value for the given
         property is greater than the `number` passed in
 
@@ -240,11 +240,17 @@ console.log("===================")
 
 //CODE HERE
 const filterByProperty = (property, number, type) => {
-    
+    filterArr = []
+    property = filterArr.push(foodArr.popularity)
+    console.log(property)
+
 }
 
+// let callback = () => 
 
-console.log("===================")
+filterByProperty = 
+
+// console.log("===================")
 
 /*
     Invoke the `filterByProperty` function passing
