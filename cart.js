@@ -193,3 +193,6 @@ console.log(vipCustomers[4])
 let totalCustomers = vipCustomers.reduce((a,b) => a + b.partySize, 0)
 
 console.log(`Total customers on the VIP list would be: `, totalCustomers)
+
+
+// adding new line to check if ahead of main
