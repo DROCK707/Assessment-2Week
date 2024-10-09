@@ -99,7 +99,7 @@ The third value would be the party size as a number, simply for operational nece
 The fourth value would be time, represented as a string, because they will need to distinguish between AM and PM.
 The fifth value would be allergens, represented as an array of strings, because there are multiple different values that fit this criteria.
 
-*/e
+*/
 
 /*
     Now, create a customer object following your own
@@ -108,11 +108,88 @@ The fifth value would be allergens, represented as an array of strings, because 
 
 //CODE HERE
 
-const customer = {
+const vipCustomers = [
+    {
     name: "Derrick Furtado",
-    phoneNumber: 7072909225,
+    phoneNumber: 7072465454,
     partySize: 5,
     time: "12pm",
     allergens: ["nuts", "dairy", "shellfish"]
 
+},{
+    name: "Alice Johnson",
+    phoneNumber: 4157891234,
+    partySize: 3,
+    time: "6pm",
+    allergens: ["gluten", "soy"]
+},
+{
+    name: "Bob Martinez",
+    phoneNumber: 5105559876,
+    partySize: 2,
+    time: "7:30pm",
+    allergens: []
+},
+{
+    name: "Cathy Lee",
+    phoneNumber: 6503214567,
+    partySize: 4,
+    time: "8pm",
+    allergens: ["dairy"]
+},
+{
+    name: "David Smith",
+    phoneNumber: 4089876543,
+    partySize: 6,
+    time: "5:45pm",
+    allergens: ["peanuts"]
+},
+{
+    name: "Emma Garcia",
+    phoneNumber: 9256543210,
+    partySize: 2,
+    time: "12:30pm",
+    allergens: ["seafood", "soy"]
+},
+{
+    name: "Frank Nguyen",
+    phoneNumber: 8319876543,
+    partySize: 8,
+    time: "2pm",
+    allergens: []
+},
+{
+    name: "Grace Patel",
+    phoneNumber: 7076549871,
+    partySize: 5,
+    time: "7pm",
+    allergens: ["gluten"]
+},
+{
+    name: "Hector Morales",
+    phoneNumber: 9165554321,
+    partySize: 3,
+    time: "1:15pm",
+    allergens: ["shellfish", "peanuts"]
+},
+{
+    name: "Isabella Torres",
+    phoneNumber: 3104328765,
+    partySize: 4,
+    time: "9pm",
+    allergens: ["nuts"]
+},
+{
+    name: "Jackie Wilson",
+    phoneNumber: 7079874321,
+    partySize: 1,
+    time: "11:30am",
+    allergens: ["dairy", "gluten"]
 }
+]
+
+console.log(vipCustomers[4])
+
+let totalCustomers = vipCustomers.reduce((a,b) => a + b.partySize, 0)
+
+console.log(`Total customers on the VIP list would be: `, totalCustomers)
